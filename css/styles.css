@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+	--background: #F6F5F6;
+	--black: hsl(0, 0%, 7%);
+	--dark-blue: hsl(219, 29%, 14%);
+	--white: hsl(0, 0%, 100%);
+	--grey-100: hsl(214, 17%, 92%);
+	--grey-200: hsl(0, 0%, 81%);
+	--grey-400: hsl(224, 10%, 45%);
+	--grey-500: hsl(217, 19%, 35%);
+	--purple-50: hsl(260, 100%, 95%);
+	--purple-300: hsl(264, 82%, 70%);
+	--purple-500: hsl(263, 55%, 52%);
+	--text-preset-1: 600 1.25rem/1.2 "Barlow Semi Condensed", sans-serif;
+	--text-preset-2: 200 0.8125rem/1.1 "Barlow Semi Condensed", sans-serif;
+	--text-preset-3: 600 0.8125rem/1.4 "Barlow Semi Condensed", sans-serif;
+	--text-preset-4: 400 0.6875rem/1.1 "Barlow Semi Condensed", sans-serif;
+	--text-preset-5: 500 0.8125rem/1 "Barlow Semi Condensed", sans-serif;
+	background-color: var(--background); 
+	max-width: 100vw;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font: var(--text-preset-3);
+}
+
+main {
+	max-width: clamp(0rem, 85vw, 69.625rem);
+}
+
+.testimonial {
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 2rem;
+}
+
+.purple {
+	--_border-width: 0.125rem;
+	--_border-color: var(--purple-300);
+	color: var(--white);
+	background-color: var(--purple-500);
+}
+
+.grey {
+	color: var(--white);
+	--_color-testimony: var(--grey-100);
+	background-color: var(--grey-500);
+}
+
+.white {
+	--_color-status: var(--grey-400);
+	color: var(--grey-500);
+	background-color: var(--white);
+}
+
+.dark-blue {
+	--_border-width: 0.125rem;
+	--_border-color: var(--purple-500);
+	--_color-name: var(--white);
+	--_color-status: var(--white);
+	--_color-testimony: var(--grey-100);
+	color: var(--grey-200);
+	background-color: var(--dark-blue);
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	gap: 1.0625rem;
+}
+
+.avatar {
+	border: var(--_border-width, 0px) solid var(--_border-color, var(--white));
+	border-radius: 50%;
+	height: 1.75rem;
+	width: 1.75rem;
+}
+
+.name {
+	color: var(--_color-name, inherit);
+	font: var(--text-preset-5);
+	margin-bottom: 0.25rem;
+}
+
+.status {
+	color: var(--_color-status, inherit);
+	font: var(--text-preset-4);
+}
+
+.title {
+	color: var(--color-title, inherit);
+	font: var(--text-preset-1);
+}
+
+.testimony {
+	color: var(--_color-testimony, inherit);
+	font: var(--text-preset-3);
+}
+
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
